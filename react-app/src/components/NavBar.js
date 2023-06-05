@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 const providers = ['twitter', 'github', 'aad'];
 
 const NavBar = (props) => {
-  const redirect = window.location.pathname;
   const [userInfo, setUserInfo] = useState();
+  const redirect = window.location.pathname;
 
   useEffect(() => {
     (async () => {
